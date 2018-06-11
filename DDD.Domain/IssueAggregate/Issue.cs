@@ -4,9 +4,8 @@ using DDD.Domain.PersonAggregate;
 
 namespace DDD.Domain.IssueAggregate
 {
-    public class Issue
+    public class Issue : Entity
     {
-        public Guid Id { get; private set; }
         public string About { get; private set; }
         public InitiatorInfo Initiator { get; private set; }
         public Guid ResponsibleId { get; private set; }
@@ -14,7 +13,7 @@ namespace DDD.Domain.IssueAggregate
         public IssueUrgency Urgency { get; private set; }
         public DateTime Created { get; private set; }
         public DateTime Deadline { get; private set; }
-        public byte[] RowVersion { get; private set; }
+        
 
         protected Issue() { }
 
@@ -31,7 +30,6 @@ namespace DDD.Domain.IssueAggregate
             if (responsible == null)
                 throw new ArgumentNullException(nameof(responsible));
 
-            Id = Guid.NewGuid();
             About = about;
             Urgency = urgency;
             Initiator = new InitiatorInfo(initiator.Name, initiator.Position);

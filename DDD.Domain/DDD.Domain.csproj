@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity.cs" />
     <Compile Include="IssueAggregate\InitiatorInfo.cs" />
     <Compile Include="IssueAggregate\Issue.cs" />
     <Compile Include="IssueAggregate\IssueStatus.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="PersonAggregate\IUser.cs" />
     <Compile Include="PersonAggregate\Specifications\EmployeeHeadSpecification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DDD.Domain.IssueAggregate
 {
-    public class InitiatorInfo
+    public class InitiatorInfo : ValueObject
     {
         public string Name { get; private set; }
         public string Position { get; private set; }
@@ -19,6 +20,12 @@ namespace DDD.Domain.IssueAggregate
 
             Name = name;
             Position = position;
+        }
+
+        protected override IEnumerable<object> GetAtomicValues()
+        {
+            yield return Name;
+            yield return Position;
         }
     }
 }

@@ -3,16 +3,14 @@ using System.Collections.Generic;
 
 namespace DDD.Domain.PersonAggregate
 {
-    public class Employee : IUser
+    public class Employee : Entity, IUser
     {
-        public Guid Id { get; private set; }
         public string Name { get; private set; }
         public string Position { get; private set; }
 
         public Guid? HeadId { get; private set; }
         public virtual Employee Head { get; private set; }
         public virtual ICollection<Employee> Employees { get; private set; }
-        public byte[] RowVersion { get; private set; }
 
         protected Employee()
         {
@@ -27,7 +25,6 @@ namespace DDD.Domain.PersonAggregate
             if (String.IsNullOrWhiteSpace(position))
                 throw new ArgumentException(nameof(position));
 
-            Id = Guid.NewGuid();
             Name = name;
             ChangePosition(position);
         }
