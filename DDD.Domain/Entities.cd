@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DDD.Domain.EmployeeAggregate.Employee">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="Employee" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAAAAAAIAgAAAAAAQACAAAAAAABAAAAAAAQAA=</HashCode>
+      <FileName>EmployeeAggregate\Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DDD.Domain.Entity">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="Entity" Hidden="true" />
+      <Property Name="RowVersion" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAABAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DDD.Domain.IssueAggregate.Issue">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="Issue" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAQAAAIEAAAAAEAAAIAQAAAQAAAEAAAAiAAI=</HashCode>
+      <FileName>IssueAggregate\Issue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,5 +1,5 @@
-using DDD.Domain.PersonAggregate;
 using System.Data.Entity.Migrations;
+using DDD.Domain.EmployeeAggregate;
 
 namespace DDD.EntityFramework.Migrations
 {

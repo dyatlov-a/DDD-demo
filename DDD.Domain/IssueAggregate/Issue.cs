@@ -1,6 +1,6 @@
 ﻿using System;
+using DDD.Domain.EmployeeAggregate;
 using DDD.Domain.IssueAggregate.Specifications;
-using DDD.Domain.PersonAggregate;
 
 namespace DDD.Domain.IssueAggregate
 {
@@ -46,12 +46,12 @@ namespace DDD.Domain.IssueAggregate
 
         private bool IsReadonly()
         {
-            return new IssueReadonlySpecification().ToExpression().Compile()(this);
+            return new IssueDoneSpecification().ToExpression().Compile()(this);
         }
 
         public bool IsNeedEscalation()
         {
-            return !IsReadonly() && new IssueDeadlineSpecification().ToExpression().Compile()(this);
+            return !IsReadonly() && new IssueDeadlineSpecification(DateTime.UtcNow).ToExpression().Compile()(this);
         }
 
         public void AppointTo(Employee newResponsible)

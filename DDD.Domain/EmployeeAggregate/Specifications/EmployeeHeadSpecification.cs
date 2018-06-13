@@ -1,8 +1,8 @@
-﻿using LinqSpecs;
-using System;
+﻿using System;
 using System.Linq.Expressions;
+using LinqSpecs;
 
-namespace DDD.Domain.PersonAggregate.Specifications
+namespace DDD.Domain.EmployeeAggregate.Specifications
 {
     public class EmployeeHeadSpecification : Specification<Employee>
     {

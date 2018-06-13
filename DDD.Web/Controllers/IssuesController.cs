@@ -27,6 +27,12 @@ namespace DDD.Web.Controllers
             return _issueService.GetAll();
         }
 
+        [Route("GetOverduetIssues"), HttpGet]
+        public IEnumerable<IssueDto> GetOverduetIssues()
+        {
+            return _issueService.GetOverduetIssues();
+        }
+
         [Route("{issueId}"), HttpGet]
         public IssueDto Get(Guid issueId)
         {

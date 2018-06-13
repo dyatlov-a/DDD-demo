@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using DDD.Domain.PersonAggregate;
+using DDD.Domain.EmployeeAggregate;
 using LinqSpecs;
 
 namespace DDD.Domain.Interfaces

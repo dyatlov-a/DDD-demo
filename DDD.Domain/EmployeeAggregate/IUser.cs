@@ -1,4 +1,4 @@
-﻿namespace DDD.Domain.PersonAggregate
+﻿namespace DDD.Domain.EmployeeAggregate
 {
     public interface IUser
     {

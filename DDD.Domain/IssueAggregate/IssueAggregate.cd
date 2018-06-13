@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DDD.Domain.IssueAggregate.Issue">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="Issue" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAQAAAIEAAAAAEAAAIAQAAAQAAAEAAAAiAAI=</HashCode>
+      <FileName>IssueAggregate\Issue.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Initiator" />
+      <Property Name="Status" />
+      <Property Name="Urgency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DDD.Domain.IssueAggregate.InitiatorInfo">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="InitiatorInfo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>IssueAggregate\InitiatorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DDD.Domain.Entity">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Entity" Hidden="true" />
+      <Property Name="RowVersion" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAABAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DDD.Domain.IssueAggregate.IssueStatus" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IssueAggregate\IssueStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DDD.Domain.IssueAggregate.IssueUrgency" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAgIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IssueAggregate\IssueUrgency.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

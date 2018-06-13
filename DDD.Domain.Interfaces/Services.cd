@@ -1,24 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Interface Name="DDD.Domain.Services.Interfaces.IEscalationService">
-    <Position X="1.75" Y="2.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>IEscalationService.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="DDD.Domain.Services.Interfaces.IEmployeeRepository">
-    <Position X="6.75" Y="2.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAIA=</HashCode>
-      <FileName>IEmployeeRepository.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
+  <Class Name="DDD.Domain.EmployeeAggregate.Employee" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DDD.Domain.IssueAggregate.Issue" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
   <Interface Name="DDD.Domain.Services.Interfaces.IObjectiveRepository">
     <Position X="9.25" Y="2.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAQAAEAAAAAAAAAAAAAABAAAAAAAAAAAAgAAAAAAAIA=</HashCode>
       <FileName>IObjectiveRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DDD.Domain.Interfaces.IEscalationService">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>IEscalationService.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

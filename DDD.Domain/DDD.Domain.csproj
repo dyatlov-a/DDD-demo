@@ -50,15 +50,19 @@
     <Compile Include="IssueAggregate\IssueStatus.cs" />
     <Compile Include="IssueAggregate\IssueUrgency.cs" />
     <Compile Include="IssueAggregate\Specifications\IssueDeadlineSpecification.cs" />
-    <Compile Include="IssueAggregate\Specifications\IssueReadonlySpecification.cs" />
-    <Compile Include="PersonAggregate\Employee.cs" />
-    <Compile Include="PersonAggregate\IUser.cs" />
-    <Compile Include="PersonAggregate\Specifications\EmployeeHeadSpecification.cs" />
+    <Compile Include="IssueAggregate\Specifications\IssueDoneSpecification.cs" />
+    <Compile Include="EmployeeAggregate\Employee.cs" />
+    <Compile Include="EmployeeAggregate\IUser.cs" />
+    <Compile Include="EmployeeAggregate\Specifications\EmployeeHeadSpecification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValueObject.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="EmployeeAggregate\EmployeeAggregate.cd" />
+    <None Include="IssueAggregate\IssueAggregate.cd" />
+    <None Include="Entities.cd" />
     <None Include="packages.config" />
+    <None Include="ValueObjects.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

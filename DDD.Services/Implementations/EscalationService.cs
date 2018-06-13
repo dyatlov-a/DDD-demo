@@ -1,5 +1,5 @@
-﻿using DDD.Domain.IssueAggregate;
-using DDD.Domain.PersonAggregate;
+﻿using DDD.Domain.EmployeeAggregate;
+using DDD.Domain.IssueAggregate;
 using DDD.Domain.Interfaces;
 
 namespace DDD.Services.Implementations

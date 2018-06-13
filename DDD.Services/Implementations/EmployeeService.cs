@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using DDD.Domain.PersonAggregate;
+using DDD.Domain.EmployeeAggregate;
+using DDD.Domain.EmployeeAggregate.Specifications;
 using DDD.Domain.Interfaces;
-using DDD.Domain.PersonAggregate.Specifications;
 using DDD.Services.Contracts;
 using DDD.Services.Dtos;
 

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using DDD.Domain.EmployeeAggregate;
 using DDD.Domain.IssueAggregate;
-using DDD.Domain.PersonAggregate;
 using DDD.Domain.Interfaces;
+using DDD.Domain.IssueAggregate.Specifications;
 using DDD.Services.Contracts;
 using DDD.Services.Dtos;
 
@@ -43,6 +44,13 @@ namespace DDD.Services.Implementations
         public IEnumerable<IssueDto> GetAll()
         {
             var issues = _issueRepository.GetAll();
+            var results = _projectionBuilder.Build<IEnumerable<Issue>, IEnumerable<IssueDto>>(issues);
+            return results;
+        }
+
+        public IEnumerable<IssueDto> GetOverduetIssues()
+        {
+            var issues = _issueRepository.GetAll(new IssueDeadlineSpecification(DateTime.UtcNow) && !new IssueDoneSpecification());
             var results = _projectionBuilder.Build<IEnumerable<Issue>, IEnumerable<IssueDto>>(issues);
             return results;
         }

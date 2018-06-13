@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DDD.Domain.ValueObject">
+    <Position X="0.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAgAAAAAAAAAAAAIAAAAAAAACAQAA=</HashCode>
+      <FileName>ValueObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DDD.Domain.IssueAggregate.InitiatorInfo">
+    <Position X="3.75" Y="1.25" Width="1.75" />
+    <Members>
+      <Method Name="InitiatorInfo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>IssueAggregate\InitiatorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

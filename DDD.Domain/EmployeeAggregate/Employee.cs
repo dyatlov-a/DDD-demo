@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DDD.Domain.PersonAggregate
+namespace DDD.Domain.EmployeeAggregate
 {
     public class Employee : Entity, IUser
     {

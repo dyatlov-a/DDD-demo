@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using DDD.Domain.EmployeeAggregate;
 using DDD.Domain.IssueAggregate;
-using DDD.Domain.PersonAggregate;
 using DDD.Services.Dtos;
 
 namespace DDD.Services.Contracts
@@ -9,6 +9,7 @@ namespace DDD.Services.Contracts
     public interface IIssueService
     {
         IEnumerable<IssueDto> GetAll();
+        IEnumerable<IssueDto> GetOverduetIssues();
         IssueDto GetById(Guid issueId);
         Guid Create(IssueCreateDto issueCreateDto, IUser currentUser);
         void AppointTo(Guid issueId, Guid newResponsibleId);

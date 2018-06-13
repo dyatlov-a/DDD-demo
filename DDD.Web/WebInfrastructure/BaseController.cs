@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Web.Http;
-using DDD.Domain.PersonAggregate;
+using DDD.Domain.EmployeeAggregate;
 
 namespace DDD.Web.WebInfrastructure
 {

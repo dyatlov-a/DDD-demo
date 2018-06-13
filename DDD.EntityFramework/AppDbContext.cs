@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
+using DDD.Domain.EmployeeAggregate;
 using DDD.Domain.IssueAggregate;
-using DDD.Domain.PersonAggregate;
 
 namespace DDD.EntityFramework
 {
